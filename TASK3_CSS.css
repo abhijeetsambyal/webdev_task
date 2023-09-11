@@ -1,0 +1,45 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: black;
+}
+
+.header {
+    display: flex;
+    background-color:green;
+    color: white;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+
+.row {
+    padding: 10px;
+    text-align: center;
+    border: 1px ;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.grey {
+    background-color: #f0f0f0;
+}
