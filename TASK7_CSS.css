@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color:#75203F;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 20px; 
+}
+
+.registration-box {
+    background-color: #A22B55; 
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 650px; 
+    width: 100%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden; 
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.form-group {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    width: 30%; 
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+    width: 65%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+}
+
+select[multiple] {
+    height: auto;
+}
+
+
+input[type="submit"] {
+    background-color: white; 
+    color:black;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%
+}
+
+input[type="submit"]:hover {
+    background-color:white;
+     
+     
+}
+
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    margin-right: 20px; 
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px; 
+    width: 15px; 
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #4CAF50;     
+}
+.gender-options {
+    display: flex;
+}
